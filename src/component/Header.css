@@ -1,0 +1,71 @@
+.header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 7rem;
+    text-align: center;
+    padding-right: 5rem;
+    border-bottom: 1px solid lightgray;
+}
+
+
+.header-company-name {
+    font-size: 3rem;
+    font-weight: 500;
+    margin-right: 12rem;
+    color: transparent;
+    background-clip: text;
+    background-image: linear-gradient(90deg, #844fdb,#7863F8);
+}
+
+.logo,
+.shape4{
+    width: 8rem;
+    height: auto;
+}
+
+.logo {
+    padding: 0.5rem;
+}
+
+.shape3 {
+    width: 10rem;
+    height: auto;
+    margin: -2rem 5rem 0 5rem;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    width: 30%;
+    margin-right: 5rem;
+}
+
+.nav-list li {
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: gray;
+    width: 10rem;
+}
+
+.nav-list li.active {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    color: white;
+    background-image: linear-gradient(to right, #25C2A7, #51b556);
+}
+
+.free-signup {
+    display: flex;
+    align-items: center;
+    padding: 0.7rem 1.5rem;
+    border-radius: 10px;
+    color: white;
+    font-size: 1.6rem;
+    width: auto;
+    background-image: linear-gradient(to right, #785EF9, #3A1FC9);
+}

@@ -1,12 +1,13 @@
 import React from 'react';
-import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 import ContentCopyOutlinedIcon from '@mui/icons-material/ContentCopyOutlined';
 
 const CardLeft = ({ data }) => {
     return (
         <div className="card-left">
             <div className="customFlex">
-                <MessageOutlinedIcon sx={{ margin: '5px 10px 0 0', fontSize: '3rem' }} />
+                <div className='title-icon'>
+                    {data.icon}
+                </div>
                 <div style={{ fontSize: '2.5rem' }}>{data.title}</div>
             </div>
 

@@ -4,8 +4,7 @@ import Home from './component/Home';
 function App() {
   return (
     <div className="app">
-      <Home/>
-     
+      <Home />
     </div>
   );
 }

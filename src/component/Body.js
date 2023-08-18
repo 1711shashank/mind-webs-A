@@ -1,12 +1,20 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Body.css'
 import Card from './Card'
+import { cardData } from './helperFunction';
 import shape1 from '../assets/shape1.png';
 import shape2 from '../assets/shape2.png';
-import FeaturesRow from './FeaturesRow'
+import FeaturesRow from './FeaturesRow';
+
 
 
 const Body = () => {
+
+    const [activeButton, setActiveButton] = useState(0);
+
+    const activeCardData = cardData.find(card => card.left.title === cardData[activeButton].left.title);
+
+
     return (
         <>
             <div className='body'>
@@ -15,9 +23,8 @@ const Body = () => {
 
                 <button className='get-started'> Get Started </button>
 
-                <Card />
-                <FeaturesRow />
-
+                <Card cardData={activeCardData} />
+                <FeaturesRow cardData={cardData} activeButton={activeButton} setActiveButton={setActiveButton} />
 
             </div>
 

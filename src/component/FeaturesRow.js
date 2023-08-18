@@ -1,39 +1,21 @@
 import './FeaturesRow.css'
-import React, { useState } from 'react';
-import CreateIcon from '@mui/icons-material/Create';
 import PersonAddIcon from '@mui/icons-material/PersonAdd';
-import AssignmentIcon from '@mui/icons-material/Assignment';
-import MultipleStopIcon from '@mui/icons-material/MultipleStop';
-import MessageOutlinedIcon from '@mui/icons-material/MessageOutlined';
 
 
-const FeaturesRow = () => {
-    const buttonList = [
-        { label: 'Explain Code', icon: <MessageOutlinedIcon sx={{ marginRight: '1rem', fontSize: '2.2rem' }} /> },
-        { label: 'Regex', icon: <p style={{ fontWeight: '700', marginRight: '1rem', fontSize: '2.2rem' }}> (.*) </p> },
-        { label: 'Convert Code', icon: <MultipleStopIcon sx={{ marginRight: '1rem', fontSize: '2.2rem' }} /> },
-        { label: 'Fix Grammar', icon: <CreateIcon sx={{ margin: '0px 10px 0 0', fontSize: '2.2rem' }} /> },
-        { label: 'Top', icon: <AssignmentIcon sx={{ marginRight: '1rem', fontSize: '2.2rem' }} /> },
-    ];
-
-    const [activeButton, setActiveButton] = useState(0);
-
-    const handleButtonClick = (buttonIndex) => {
-        setActiveButton(buttonIndex);
-    };
+const FeaturesRow = ({ cardData, activeButton, setActiveButton }) => {
 
     return (
         <>
             <div className='featuresRow'>
                 {
-                    buttonList.map((button, index) => (
+                    cardData.map((card, index) => (
                         <button
                             key={index}
-                            onClick={() => handleButtonClick(index)}
+                            onClick={() => setActiveButton(index)}
                             className={`features-button ${activeButton === index ? 'activeButton' : ''}`}
                         >
-                            {button.icon}
-                            {button.label}
+                            {card.left.icon}
+                            {card.left.title}
                         </button>
                     ))
                 }

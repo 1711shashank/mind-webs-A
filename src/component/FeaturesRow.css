@@ -1,0 +1,52 @@
+.featuresRow {
+    width: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 0.5rem;
+}
+
+.features-button {
+    display: flex;
+    align-items: center;
+    color: blue;
+    background-color: #A998FD;
+    margin-right: 2rem;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    padding: 0.5rem 2rem;
+    min-height: 36px;
+    max-height: 36px;
+}
+
+.activeButton {
+    background-color: white;
+}
+
+.openAI-img {
+    width: auto;
+    height: 40px;
+    opacity: 0.5;
+}
+
+.featuresRow-bottomText>* {
+    color: #dbd4ff;
+    font-size: 1.4rem;
+    width: 50%;
+    text-align: left;
+}
+
+.free-signup-bg-wt {
+    display: flex;
+    align-items: center;
+    padding: 1.2rem 2.5rem;
+    border-radius: 10px;
+    color: blue;
+    font-size: 2rem;
+    font-weight: 500;
+    width: auto;
+    background-color: white;
+    margin: 4rem;
+}

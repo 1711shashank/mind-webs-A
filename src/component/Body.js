@@ -1,5 +1,10 @@
 import React from 'react'
 import './Body.css'
+import Card from './Card'
+import shape1 from '../assets/shape1.png';
+import shape2 from '../assets/shape2.png';
+import FeaturesRow from './FeaturesRow'
+
 
 const Body = () => {
     return (
@@ -10,7 +15,16 @@ const Body = () => {
 
                 <button className='get-started'> Get Started </button>
 
+                <Card />
+                <FeaturesRow />
+
+
             </div>
+
+            <div className='colored-background'></div>
+            <img src={shape1} className='shape1' alt='' width='100%' />
+            <img src={shape2} className='shape2' alt='' width='100%' />
+
         </>
     )
 }

@@ -8,7 +8,7 @@ import PersonAddIcon from '@mui/icons-material/PersonAdd';
 
 
 const Header = () => {
-    const [activeItem, setActiveItem] = useState('Home'); // Initialize active item
+    const [activeItem, setActiveItem] = useState('Home'); 
 
     const handleItemClick = (item) => {
         setActiveItem(item);
@@ -29,9 +29,9 @@ const Header = () => {
                 </div>
 
                 <div className='free-signup'>
-                    <PersonAddIcon sx={{margin:'2px 10px 0 0', fontSize:'2.2rem'}}/>
+                    <PersonAddIcon sx={{ margin: '2px 10px 0 0', fontSize: '2.2rem' }} />
                     Free Signup
-                    </div>
+                </div>
                 <img className='shape3' src={shape3} alt='' width='100%' />
 
             </div>

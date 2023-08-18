@@ -1,0 +1,80 @@
+.card {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+
+    width: 65%;
+    border-radius: 20px;
+    background-color: white;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.card-left {
+    border-right: 1px solid #ccc;
+}
+
+.card-left,
+.card-right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 3rem;
+}
+
+.customFlex {
+    display: flex;
+    align-items: flex-start;
+}
+
+.cardPoint{
+    border-bottom: 1px solid #ccc;
+    padding: 1rem 0;
+}
+.cardPoint:last-child{
+    border-bottom: none;
+}
+
+.textarea {
+    background-color: #f2f2f2;
+    width: 95%;
+    height: 13rem;
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    padding: 2rem;
+    font-size: 1.6rem;
+    margin-bottom: 3rem;
+}
+
+.copy-output {
+    display: flex;
+    align-items: center;
+    color: gray;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    outline: none;
+    border: none;
+    padding: 1rem 2.5rem;
+    margin-top: 2rem;
+}
+
+.icon-container-black {
+    background-color: rgb(55, 55, 55);
+    color: white;
+    border-radius: 50%;
+    margin-right: 1rem;
+}
+
+.icon-container-gray {
+    background-color: #ccc;
+    color: rgb(36, 36, 36);
+    border-radius: 50%;
+    margin-right: 1.5rem;
+}
+
+.card-subtitle{
+    font-size: 1.6rem;
+    color: gray;
+    margin: 1rem 0;
+}

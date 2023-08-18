@@ -14,7 +14,6 @@ const Body = () => {
 
     const activeCardData = cardData.find(card => card.left.title === cardData[activeButton].left.title);
 
-
     return (
         <>
             <div className='body'>

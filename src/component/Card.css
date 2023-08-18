@@ -2,6 +2,7 @@
     margin-top: 5rem;
     margin-bottom: 2rem;
     display: flex;
+    min-height: 40rem;
 
     width: 65%;
     border-radius: 20px;
@@ -49,6 +50,8 @@
 }
 
 .copy-output {
+    top: 71.5rem;
+    position: absolute;
     display: flex;
     align-items: center;
     color: gray;

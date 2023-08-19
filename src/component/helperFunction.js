@@ -10,7 +10,7 @@ export const cardData = [
             title: 'Explain Code',
             description: 'Explain some Code based on the syntax provided',
             placeholder: 'print("Hello World")',
-            icon: <MessageOutlinedIcon sx={{ fontSize: '2.2rem' }} />,
+            icon: <MessageOutlinedIcon className='mui-icon' />,
 
         },
         right: {

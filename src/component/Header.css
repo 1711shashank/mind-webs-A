@@ -50,6 +50,7 @@
     font-weight: 500;
     color: gray;
     width: 10rem;
+    margin: 0 3px;
 }
 
 .nav-list li.active {
